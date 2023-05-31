@@ -1,0 +1,33 @@
+.main{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+
+
+}
+
+
+
+
+.select-num{
+
+    height: 30px;
+    width: 80px;
+
+}
+.inputApuesta{
+
+    height: 30px;
+    width: 120px; 
+}
+
+.btnjugar{
+    height: 30px;
+    width: 80px;
+
+
+}
