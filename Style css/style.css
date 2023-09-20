@@ -1,33 +1,89 @@
-.main{
+/* Estilos generales */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333; /* Color de texto principal */
+}
 
+/* Contenedor principal */
+.main {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    
-
-
+    text-align: center;
 }
 
-
-
-
-.select-num{
-
-    height: 30px;
-    width: 80px;
-
-}
-.inputApuesta{
-
-    height: 30px;
-    width: 120px; 
+/* Encabezado */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff; /* Color de encabezado atractivo */
 }
 
-.btnjugar{
-    height: 30px;
-    width: 80px;
+/* Introducción del juego */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
+/* Contenedor de elementos de entrada */
+.input-container {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta elementos en diferentes dispositivos */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
+/* Selección de números */
+.select-num {
+    height: 40px;
+    width: 100px;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Campo de apuesta */
+.inputApuesta {
+    height: 40px;
+    width: 100px;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Botón de jugar */
+.btnjugar {
+    height: 40px;
+    width: 100px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btnjugar:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de resultado */
+article.ganado {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+/* Saldo */
+p span.j_balance {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
 }
