@@ -1,89 +1,129 @@
-/* Estilos generales */
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+
+
+
+/*need to change the style for  something more atractive
+/* Reset and General Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333; /* Color de texto principal */
+    box-sizing: border-box;
 }
 
-/* Contenedor principal */
+body {
+    font-family:cursive, sans-serif;
+    background-color: #bfb4da;
+    background-image: url('../images/Dice.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    color: #e2d5d5;
+    overflow: hidden; /* Hide overflow to prevent scrollbars from background image */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background-color: #7643d3;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    
+}
+
+/* Main Styles */
 .main {
-    height: 100vh;
+    position: relative; /* Position relative to allow absolute positioning for background image*/ 
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 50%;
+}
+
+/* Dice Background Styles */
+.dice-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a46ec9;
+    
+    background-size: cover;
+    opacity: 0.3; /* Adjust opacity as needed */
+}
+
+/* Game Container Styles */
+.game-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for game container */
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
+    margin-top: 20px;
 }
 
-/* Encabezado */
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #007bff; /* Color de encabezado atractivo */
-}
-
-/* Introducción del juego */
 p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: #ac89ec;
 }
 
-/* Contenedor de elementos de entrada */
 .input-container {
     display: flex;
-    flex-wrap: wrap; /* Ajusta elementos en diferentes dispositivos */
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    
 }
 
-/* Selección de números */
-.select-num {
-    height: 40px;
-    width: 100px;
-    margin: 0 10px;
-    padding: 5px;
-    font-size: 16px;
-}
-
-/* Campo de apuesta */
-.inputApuesta {
-    height: 40px;
-    width: 100px;
-    margin: 0 10px;
-    padding: 5px;
-    font-size: 16px;
-}
-
-/* Botón de jugar */
+/* Button Styles */
+.select-num,
+.inputApuesta,
 .btnjugar {
     height: 40px;
-    width: 100px;
-    background-color: #007bff;
+    width: 270px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.btnjugar {
+    background-color: #9656e0;
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .btnjugar:hover {
     background-color: #0056b3;
 }
 
-/* Mensaje de resultado */
-article.ganado {
+/* Message Styles */
+.ganado {
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
-    color: #007bff;
+    margin-bottom: 30px;
+    color: #a46ec9;
 }
 
-/* Saldo */
-p span.j_balance {
+/* Balance Styles */
+.saldo {
     font-size: 18px;
     font-weight: bold;
-    color: #007bff;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #dae0e6ff;
+    color: #131316;
+    /*padding: 10px 0;*/
+    height: 10%;
 }
